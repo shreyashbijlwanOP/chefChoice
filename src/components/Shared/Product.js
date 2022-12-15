@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Button, Card } from "react-bootstrap";
 import { useCartContext } from "../Context/Context";
 
@@ -7,10 +7,6 @@ const Product = ({ prods }) => {
     state: { cart },
     dispatch,
   } = useCartContext();
-
-  useEffect(()=>{
-    console.log(cart)
-  },[cart])
 
   return (
     <div className="products">
