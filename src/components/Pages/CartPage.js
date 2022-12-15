@@ -24,8 +24,8 @@ const CartPage = () => {
     });
   return (
     <div className="container-fluid">
-      <div className="row mb-3 sticky-top">
-        <div className="col" style={{ backgroundColor: "#d21243" }}>
+      <div className="row mb-3 sticky-top ">
+        <div className="col py-2" style={{ backgroundColor: "#d21243" }}>
           <div className="title">
             <span className="flex-grow-1">
               Total Price : ₹{" "}
