@@ -76,7 +76,7 @@ const CartPage = () => {
                     <Image src={prod.image} fluid rounded />{" "}
                   </Col>
                   <Col xs={4} className="align-self-center">
-                    {prod.name} <span className="mx-3 fw-bold">{prod.category.toUpperCase()}</span>
+                    {prod.name} <span className="mx-3 fw-bold"></span>
                   </Col>
                   <Col xs={2} className="fw-bold align-self-center">
                     ₹ {prod.price.split(".")[0]}
