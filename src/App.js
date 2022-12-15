@@ -1,10 +1,19 @@
-
-import './App.css';
+import { Route, Routes } from "react-router";
+import "./App.css";
+import Cart from "./components/Cart";
+import Home from "./components/Home";
+import Header from "./Header";
 
 function App() {
   return (
     <div className="App">
-    <h1>this is React</h1>     
+      <Header />
+      <div>
+        <Home />
+        <Routes>
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </div>
     </div>
   );
 }
