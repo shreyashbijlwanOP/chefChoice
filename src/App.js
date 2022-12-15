@@ -1,19 +1,24 @@
-import { Route, Routes } from "react-router";
 import "./App.css";
-import Cart from "./components/Cart";
-import Home from "./components/Home";
-import Header from "./Header";
-
+import React from "react"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/Pages/Home";
+import NotFound from "./components/Pages/NotFound";
+import CartPage from "./components/Pages/CartPage";
+import CategoryPage from "./components/Pages/CategoryPage";
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <div>
-        <Home />
+    <div className="App position-relative">
+      
+      <BrowserRouter>
         <Routes>
-          <Route path="/cart" element={<Cart />} />
+        
+          <Route path="/" element={<Home />} />
+          <Route path="/cart" element={<CartPage />} />
+          <Route path="/category" element={<CategoryPage/>} />
+          <Route path="/category/:id" element={<CategoryPage/>} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
-      </div>
+      </BrowserRouter>
     </div>
   );
 }

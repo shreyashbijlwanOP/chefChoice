@@ -1,10 +1,21 @@
-.list{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 10px;
+*{
+  scrollbar-width: none;
 }
-.list> *{
-  margin: auto;
+nav{
+  z-index: 1020;
+  min-height: 60px;
+}
+
+.cartitem{
+  display: flex;
+  background-color: aliceblue;
+  align-items: center;
+  justify-content: space-between;
+}
+.title{
+font-size: 1.8rem;
+display: flex;
+color: white;
+gap: 10px;
+align-items: center;
 }
