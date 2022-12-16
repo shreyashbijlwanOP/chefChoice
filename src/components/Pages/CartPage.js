@@ -5,6 +5,7 @@ import { AiFillDelete } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "../Shared/Footer";
 const CartPage = () => {
   let {
     state: { cart },
@@ -116,6 +117,7 @@ const CartPage = () => {
           </ListGroup>
         </div>
       </div>
+      <Footer fixed="fixed-bottom"/>
     </div>
   );
 };

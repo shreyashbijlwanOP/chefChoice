@@ -2,6 +2,7 @@ import React from "react";
 import BestSeller from "../BestSeller/BestSeller";
 import Catogory from "../CatogerySection/Catogory";
 import Navbar from "../Navbar/Navbar";
+import Footer from "../Shared/Footer";
 const Home = () => {
   return (
     <main>
@@ -16,6 +17,7 @@ const Home = () => {
       </div>
       <Catogory />
       <BestSeller />
+      <Footer />
     </main>
   );
 };
